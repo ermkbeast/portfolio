@@ -1,0 +1,10 @@
+.footer-css{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-bg-variant);
+    margin-top: 2rem;
+}
+.footer-css p{
+    padding: 1.2rem;
+}

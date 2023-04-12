@@ -1,0 +1,53 @@
+header{
+    
+    padding-top: 7rem;
+    overflow: auto;
+}
+.header__container{
+    text-align: center;
+
+}
+.my_image{
+    background:linear-gradient(var(--color-primary),transparent);
+    width: 22rem;
+    height: 19.8rem;
+    align-items: center;
+    position: relative;
+    left:calc(50% - 10rem);
+    margin-top: 2rem;
+    border-radius: 11rem 11rem 0 0;
+    padding: 5px;
+}
+.scroll_down{
+    font-weight: 300;
+    position: absolute;
+    right:3rem;
+    bottom: 9rem;
+    transform: rotate(90deg);
+    
+}
+
+
+/*===================== MEDIA (MEDIUM DEVICES) *************/
+@media screen and (max-width:1024px) {
+    .container{
+      width: var(--container-width-md);
+      /* background-color: brown; */
+    }
+    .scroll_down{
+        display: none;   
+    }
+   
+  }
+  
+  @media screen and (max-width:600px) {
+    .scroll_down{
+        display: none;   
+    }
+    
+    .my_image{
+        width: 20rem;
+        left: calc(50%-10rem);
+        align-items: center;
+    }
+  }

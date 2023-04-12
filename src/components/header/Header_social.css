@@ -1,0 +1,27 @@
+.header-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    bottom: 3rem;
+}
+.header-social::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+/*===================== MEDIA (MEDIUM DEVICES) *************/
+@media screen and (max-width:1024px) {
+  .header-social{
+    display: none;
+}
+  }
+  
+  @media screen and (max-width:600px) {
+    .header-social{
+        display: none;
+    }
+    
+  }

@@ -1,0 +1,99 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgb(146, 51, 35),
+        transparent
+    );
+    border-radius: 20px;
+    width: 80%;
+    height: 35vh;
+    
+    
+}
+.about-me-image{
+   overflow: hidden;
+   
+   border-radius: 20px;
+   transform: rotate(10deg);
+}
+.about-me-image:hover{
+    transform: rotate(0deg);
+    transition: ease-in-out .5s;
+ }
+.about-carts{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+    
+}
+.about-cart{
+    background-color: var(--color-bg-variant);
+    width: 33.333333333333%;
+    
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+  
+}
+.about-cart:hover{
+   background: transparent;
+   cursor: pointer;
+}
+.about-p{
+    margin: 2rem 0rem;
+    color: var(--color-light);
+}
+.letsgobtn{
+   
+   margin-bottom: 5rem;
+}
+
+/*===================== MEDIA (MEDIUM DEVICES) *************/
+@media screen and (max-width:1024px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+    .about-me{
+        width: 40%;
+        margin: auto; 
+    }
+  }
+  
+  @media screen and (max-width:600px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+    .about-me{
+        width: 65%;
+        margin: auto; 
+    }
+    .about-carts{
+        display: flex;
+       flex-wrap: wrap;
+    }
+    .about-cart{
+        width: 40%;
+        margin: 1rem .5rem;
+    }
+    .letsgobtn{
+        display: flex;
+       justify-content: center;
+       margin-bottom: 3rem;
+    }
+    .about-p{
+        text-align: justify;
+        margin: 1rem 1rem;
+    }
+  }

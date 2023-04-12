@@ -1,0 +1,73 @@
+.portfolioo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.portfolio-div{
+    width: 30%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color:var(--color-bg-variant);
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+.portfolio-div:hover{
+    background-color: transparent;
+    transition: .5s ;
+}
+.portfolio-div-image img{
+    border-radius: 2rem;
+}
+.portfolio-div-image:hover{
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+.portfolio-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.portfolio-btn-primary{
+    width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--trans);
+}
+.portfolio-btn-primary:hover{
+    background-color: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+.p_container{
+    margin-top: 8rem;
+}
+
+@media screen and (max-width:1024px) {
+    .portfolioo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+    .portfolio-div{
+        width: 44%;
+       
+    }
+}
+@media screen and (max-width:600px) {
+    .portfolioo{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 3vh;
+    }
+    .portfolio-div{
+        width: 100%;
+       
+    }
+}

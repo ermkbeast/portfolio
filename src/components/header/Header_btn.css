@@ -1,0 +1,8 @@
+.header-btn-class{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
